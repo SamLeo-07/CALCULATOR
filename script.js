@@ -43,13 +43,13 @@ operator.forEach(operator => {
     operator.addEventListener('click', () =>{
         if (globalNumber !== null && opt !== ''){
             calculate();
-        } else{
+        } 
         previousNum = globalNumber;
-        digi1.textContent = previousNum + operator.value;
+        digi1.textContent = globalNumber + operator.value;
         digi.textContent = null;
         opt = operator.value
         displayNum = [];
-        }
+        
         
     })
 })
@@ -90,8 +90,9 @@ function calculate(){
         result = (globalNumber/100) * previousNum;
     } 
     
-    globalNumber = result; 
+    
     digi.textContent = result;
+    globalNumber = result;
     displayNum = []
 }
 
