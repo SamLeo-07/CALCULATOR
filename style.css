@@ -1,0 +1,62 @@
+@font-face {
+    font-family: digital;
+    src: url(Fonts/digital-7.ttf);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    margin-top: 40px;
+    height: 600px;
+    width: 500px;
+    background-color: rgb(201, 201, 201);
+    display: grid;
+    grid-template-rows: 20% 80%;
+    gap: 5px;
+    border-radius: 20px;
+    border-color: solid  black ;
+}
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 20px;
+    gap: 10px;
+}
+input, button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.screen{
+    text-align: right;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: rgb(201, 201, 201);
+    border-radius: 20px 20px 0 0;
+    object-fit: contain;
+}
+.digi1{
+    grid-area: 1/1/1/1;
+    color: rgb(0, 0, 0);
+    font-family: digital;
+    margin: 10px 0 0 0;
+    font-size: 30px;
+}
+.digi{
+    grid-area: 2/1/2/1;
+    color: rgb(4, 4, 4);
+    font-family: digital;
+    font-size: 100px;
+    margin: 0 0 0 0;
+}
+.equal{
+    grid-area: 5/3/5/5;
+    background-color: darkseagreen;
+}
+
+
