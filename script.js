@@ -25,7 +25,6 @@ numbers.forEach(number => {
         if (displayNum.length >= 10) {
             return;
         }
-
         if (value === '.' && displayNum.includes('.')) {
             return;
         }
@@ -41,15 +40,16 @@ numbers.forEach(number => {
 })
 
 operator.forEach(operator => {
-    operator.addEventListener('click', (e) =>{
+    operator.addEventListener('click', () =>{
         if (globalNumber !== null && opt !== ''){
             calculate();
-        } 
+        } else{
         previousNum = globalNumber;
-        digi1.textContent = previousNum + `${operator.value}`;
+        digi1.textContent = previousNum + operator.value;
         digi.textContent = null;
         opt = operator.value
         displayNum = [];
+        }
         
     })
 })
