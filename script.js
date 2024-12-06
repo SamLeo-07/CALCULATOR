@@ -42,7 +42,7 @@ numbers.forEach(number => {
 
 operator.forEach(operator => {
     operator.addEventListener('click', (e) =>{
-        if (globalNumber !== null && previousNum !== null && opt !== ''){
+        if (globalNumber !== null && opt !== ''){
             calculate();
         } 
         previousNum = globalNumber;
